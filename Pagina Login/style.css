@@ -1,0 +1,262 @@
+/* Variáveis e Paleta de Cores */
+:root {
+    --primary-color: #00a8e8;
+    --primary-hover: #0086b8;
+    --secundary-color: #005b7c;
+    --text-color: #0d1b2a;
+    --subtext-color: #6c757d;
+    --bg-color: #f0f8ff;
+    --card-bg: #ffffff;
+    --border-color: #dbe2ef;
+}
+
+/* Estilos Gerais */
+body {
+    margin: 0;
+    background-color: var(--bg-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--text-color);
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h1 a.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 48px;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+header h1 a.logo:hover {
+    transform: scale(1.05);
+}
+
+header h1 a.logo:active {
+    transform: scale(0.98);
+}
+
+header p {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* Estrutura do cabeçalho da Home */
+.header-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Barra de pesquisa no cabeçalho */
+.header-conteudo form {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 500px;
+    margin: 0 30px;
+}
+
+.header-conteudo input[type="search"] {
+    margin-bottom: 0;
+}
+
+.header-conteudo form button {
+    width: auto;
+    margin: 0 0 0 10px;
+    padding: 12px 20px;
+}
+
+/* Imagem de perfil do usuário */
+#user-img {
+    width: 45px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Estrutura Principal */
+main {
+    max-width: 700px;
+    width: 75%;
+    margin: 40px auto;
+}
+
+/* Container de apresentação e cadastro */
+.pagina {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    overflow: hidden;
+    gap: 0px;
+    vertical-align: top;
+}
+
+/* Coluna Esquerda - Apresentação */
+.apresentacao {
+    flex: 1.3;
+    background-image:linear-gradient(to top,#005b7c, #00a8e8);
+    color: aliceblue;
+    padding: 15px;
+    box-sizing: border-box;
+    vertical-align: top;
+    text-align: center;
+    animation: surgirCard 0.4s ease-out forwards;
+}
+
+.apresentacao h1 {
+    font-size: 22px;
+    color: var(--bg-color);
+    margin-top: 50px;
+}
+
+.beneficios {
+    display: inline-block;
+    width: 80%;
+    padding: 15px;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    border: 1px solid #dbe2ef;
+    border-radius: 8px;
+}
+
+.beneficios h3 {
+    color: var( --bg-color);
+    border-bottom: 1px solid var(--secundary-color);
+    padding-bottom: 8px;
+    margin-top: 0;
+}
+
+/* Coluna Direita - Área de Cadastro */
+.area-cadastro {
+    flex: 2;
+}
+
+/* Cards de Login e Registro */
+
+.login,
+.register {
+    background-color: var(--card-bg);
+    padding: 45px;
+    border: 1px solid var(--border-color);
+    box-sizing: border-box;
+    animation: surgirCard 0.4s ease-out forwards;
+}
+
+.login {
+    max-width: 420px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.descricao {
+    font-size: small;
+    margin-bottom: 25px;
+    text-align: center;
+    color: var(--subtext-color);
+}
+
+/* Elementos de Formulário */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    padding: 12px 15px;
+    height: 45px;
+    width: 100%;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+/* Botões */
+button {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--primary-hover);
+}
+
+/* Links de Cadastro e Login */
+.cadastro {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+    color: var(--subtext-color);
+    display: block;
+}
+
+.cadastro a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.cadastro a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 15px;
+    color: var(--subtext-color);
+    font-size: 13px;
+}
+
+/* Animações */
+@keyframes surgirCard {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
