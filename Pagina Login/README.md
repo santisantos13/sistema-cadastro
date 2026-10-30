@@ -1,26 +1,25 @@
-# Tela de Login e Cadastro - NexPlay
+# Tela de Cadastro - NexPlay
 
-Exercício de HTML e CSS: telas de login e cadastro para a loja fictícia **NexPlay**.
+Exercício de HTML e CSS: formulário de cadastro da loja fictícia **NexPlay**.
 
-> Projeto de estudo. É apenas front-end: os formulários não enviam dados para nenhum servidor.
+> Projeto de estudo. É apenas front-end: o formulário não envia dados para nenhum servidor.
 
 ## O que tem aqui
 
-- `login.html`: tela de entrada (e-mail e senha)
-- `cadastro.html`: tela de cadastro (nome, e-mail e senha)
-- `style.css`: estilos compartilhados pelas duas páginas
+- `cadastro.html`: campos de nome completo, telefone, e-mail, senha e confirmação de senha
+- Seção de benefícios (desconto, lembretes, acesso antecipado)
+- Link para a tela de login
 
 ## O que pratiquei
 
 - Estrutura semântica com `header`, `main`, `section` e `footer`
 - Formulários com `label`, `input` e validação nativa (`required`, `type="email"`)
 - Variáveis CSS (`:root`) para a paleta de cores
-- Transições (`hover`, `focus`) e animação com `@keyframes`
+- Transições (`hover`, `focus`)
 
 ## Como ver o projeto
 
-1. Baixe ou clone este repositório
-2. Abra o arquivo `login.html` no navegador
+Baixe ou clone este repositório e abra o `cadastro.html` no navegador.
 
 ## Próximos passos
 
@@ -30,4 +29,4 @@ Exercício de HTML e CSS: telas de login e cadastro para a loja fictícia **NexP
 
 ## Autor
 
-Santhiago ([@santisantos13](https://github.com/santisantos13))
+Santhiago [@santisantos13](https://github.com/santisantos13)
