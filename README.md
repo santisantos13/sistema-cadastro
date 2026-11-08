@@ -4,7 +4,7 @@ Projeto de estudo com HTML, CSS e um pouco de JavaScript: página inicial, login
 
 > Projeto em desenvolvimento. É apenas front-end: os formulários não enviam dados para nenhum servidor.
 
-**Demo:** [Ver o site no ar](https://santisantos13.github.io/sistema-cadastro/)
+**Demo:** [Ver o site no ar](https://santisantos13.github.io/sistema-cadastro/login.html)
 
 ## Páginas
 
