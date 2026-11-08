@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html" class="logo">NexPlay</a></h1>
+        <p>Área do cliente</p>
+    </header>
+
+    <main>
+
+        <div class="pagina">
+
+            <div class="apresentacao">
+                <h1>Ganhe benefícios!</h1>
+
+                <p>
+                    Cadastre-se e consiga acesso
+                    a descontos exclusivos.
+
+                </p>
+                <p>
+                    Acesso antecipado a itens colecionáveis
+                    e muito mais.
+                </p>
+
+                <div class="beneficios">
+                    <h3>Seus benefícios</h3>
+                    <p>✓ Desconto de 1%</p>
+                    <p>✓ Lembretes de promoções</p>
+                    <p>✓ Acesso antecipado a
+                        itens colecionáveis
+                    </p>
+                </div>
+            </div>
+
+            <div class="area-cadastro">
+
+                <section class="register">
+                    <h2>Cadastrar</h2>
+                    <p class="descricao">Digite os seus dados para acessar a sua conta</p>
+
+                    <form action="" id="form-cadastro">
+
+                        <label for="nome">Nome completo</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome..." autocomplete="name"
+                            required>
+
+                        <label for="telefone">Número de telefone</label>
+                        <input type="tel" name="telefone" id="telefone" placeholder="(00) 90000-0000" autocomplete="tel"
+                            required>
+
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu email..."
+                            autocomplete="email" required>
+
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" id="senha" placeholder="Mínimo de 6 caracteres"
+                            minlength="6" autocomplete="new-password" required>
+
+                        <label for="confirmar-senha">Confirmar senha</label>
+                        <input type="password" name="confirmar-senha" id="confirmar-senha"
+                            placeholder="Confirme sua senha..." minlength="6" autocomplete="new-password" required>
+
+                        <p id="mensagem" class="mensagem"></p>
+                        <button type="submit">Cadastrar</button>
+                    </form>
+                    <p class="cadastro">Já possui uma conta?
+                        <a href="login.html">Login</a>
+                    </p>
+                </section>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; 2026 Santhiago - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
